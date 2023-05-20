@@ -1,0 +1,91 @@
+.button{
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:         20pt;
+    -fx-text-fill:         #DF551F;
+	-fx-background-color:  #000000;
+	-fx-border-color:      #DF551F;
+	-fx-border-width:      1px;
+	-fx-border-radius:     20;
+	-fx-background-radius: 20;
+	-fx-pref-width:        80px;
+	-fx-pref-height:       51px;
+}
+.second-Row-button{
+        -fx-font-size:         15pt;
+    	-fx-pref-width:        75px;
+    	-fx-pref-height:       36px;
+}
+.custom-button{
+    	-fx-pref-width:        254px;
+}
+.custom-2-button{
+    	-fx-pref-width:        170.5px;
+}
+.custom-3-button{
+        -fx-font-size: 15px;
+}
+.custom-4-button{
+    -fx-pref-width:        120px;
+    -fx-pref-height:       5px;
+}
+.custom-5-button{
+    -fx-pref-width:        160px;
+    -fx-pref-height:       5px;
+}
+.custom-6-button{
+        -fx-pref-width: 201px;
+}
+.custom-7-button{
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:          9pt;
+    -fx-text-fill:          #DF551F;
+    -fx-pref-width:         100px;
+    -fx-pref-height:        35px;
+}
+.custom-8-button{
+     -fx-pref-width:         260px;
+     -fx-pref-height:        35px;
+}
+.custom-9-button{
+    -fx-font-family:       "Bell MT";
+        -fx-font-size:         12pt;
+        -fx-text-fill:         #DF551F;
+}
+.title-label{
+    -fx-font-size:        50pt;
+    -fx-border-width:     0px;
+    -fx-pref-width:       50px;
+    -fx-pref-height:      50px;
+}
+.custom-label{
+    -fx-border-color:      #DF551F;
+    -fx-border-width:      0.25px;
+    -fx-text-fill:         #DF551F;
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:          24px;
+    -fx-pref-width:        200px;
+    -fx-pref-height:       66px;
+}
+.custom-1-label{
+    -fx-pref-width:       10px;
+    -fx-pref-height:      10px;
+    -fx-font-size:        12px;
+    -fx-text-fill:        #DF551F;
+    -fx-border-color:     #000000;
+    -fx-border-radius:     0;
+}
+.custom-2-label{
+    -fx-border-color:      #DF551F;
+    -fx-border-width:      0.2px;
+    -fx-text-fill:         #DF551F;
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:          24px;
+}
+.custom-textfield{
+    -fx-text-fill:         #DF551F;
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:          24px;
+    -fx-border-color:      #DF551F;
+    -fx-border-width:      0.25px;
+    -fx-background-color:  #000000;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-color: black;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group5.calculatorproject.PhysicsController">
+   <children>
+      <AnchorPane prefHeight="842.0" prefWidth="1366.0" style="-fx-background-color: #111111;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+               <Label layoutX="594.0" layoutY="3.0" styleClass="t" text="Physics" textFill="#df551f">
+                   <font>
+                       <Font name="Bell MT" size="50.0" />
+                   </font>
+               </Label>
+               <Label layoutX="14.0" layoutY="5.0" text="Sci" textFill="#df551f">
+                   <font>
+                       <Font name="Bell MT Bold" size="31.0" />
+                   </font>
+               </Label>
+               <Label layoutX="55.0" layoutY="8.0" prefHeight="54.0" prefWidth="109.0" text="CAL" textFill="#df551f">
+                   <font>
+                       <Font name="Bell MT Bold" size="45.0" />
+                   </font>
+               </Label>
+            <Button fx:id="scientificButton" layoutX="164.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedScientific" prefHeight="51.0" prefWidth="154.0" styleClass="custom-5-button" text="Scientific" />
+            <Button fx:id="chemistryButton" layoutX="1001.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedChemistry" prefHeight="51.0" prefWidth="152.0" styleClass="custom-5-button" text="Chemistry" />
+            <Button fx:id="physicsButton" layoutX="1168.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedPhysicsButton" prefHeight="51.0" prefWidth="144.0" styleClass="custom-5-button" text="Physics" />
+            <Button fx:id="basicButton" layoutX="335.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedBasic" prefHeight="51.0" prefWidth="119.0" styleClass="custom-4-button" text="Basic" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="73.0" prefHeight="779.0" prefWidth="1366.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="forceButton" layoutX="665.0" layoutY="168.0" mnemonicParsing="false" onAction="#clickedForce" prefWidth="254.0" styleClass="custom-8-button" text="Force" />
+            <Button fx:id="voltageButton" layoutX="388.0" layoutY="251.0" mnemonicParsing="false" onAction="#clickedVoltage" prefWidth="254.0" styleClass="custom-8-button" text="Voltage" />
+            <Button fx:id="power" layoutX="665.0" layoutY="243.0" mnemonicParsing="false" onAction="#clickedPower" prefWidth="254.0" styleClass="custom-8-button" text="Power" />
+            <Button fx:id="weightButton" layoutX="115.0" layoutY="251.0" mnemonicParsing="false" onAction="#clickedWeight" prefWidth="254.0" styleClass="custom-8-button" text="Weight" />
+            <Button fx:id="momentumButton" layoutX="937.0" layoutY="243.0" mnemonicParsing="false" onAction="#clickedMomentum" prefWidth="254.0" styleClass="custom-8-button" text="Momentum" />
+            <Button fx:id="accelerationButton" layoutX="388.0" layoutY="168.0" mnemonicParsing="false" onAction="#clickedAcceleration" prefWidth="254.0" styleClass="custom-8-button" text="Acceleration" />
+            <Button fx:id="velocityButton" layoutX="115.0" layoutY="168.0" mnemonicParsing="false" onAction="#clickedVelocity" prefWidth="254.0" styleClass="custom-8-button" text="Velocity" />
+            <Button fx:id="wavelengthButton" layoutX="937.0" layoutY="168.0" mnemonicParsing="false" onAction="#clickedWavelength" prefWidth="254.0" styleClass="custom-8-button" text="Wavelength" />
+            <Label layoutX="103.0" layoutY="49.0" prefHeight="61.0" prefWidth="990.0" text="Click on the name of the physics equation you want to solve:" textFill="#df551f">
+               <font>
+                  <Font name="Bell MT Bold" size="36.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="721.0" prefHeight="30.0" prefWidth="741.0" text="Project by: Ranasia Clark, Angie Djonkep, jeffrey Cruz, Edward Collier, Ryan Corbett" textFill="#df551f">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="mainPageButton" layoutX="14.0" layoutY="660.0" mnemonicParsing="false" onAction="#clickedMain" prefHeight="51.0" prefWidth="119.0" styleClass="custom-4-button" text="Main" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

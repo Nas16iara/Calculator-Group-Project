@@ -1,0 +1,50 @@
+.button{
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:         20pt;
+    -fx-text-fill:         #DF551F;
+	-fx-background-color:  #000000;
+	-fx-border-color:      #DF551F;
+	-fx-border-width:      1px;
+	-fx-border-radius:     20;
+	-fx-background-radius: 20;
+	-fx-pref-width:        330px;
+	-fx-pref-height:       100px;
+}
+.custom-textfield{
+    -fx-text-fill:         #DF551F;
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:          24px;
+    -fx-border-color:      #DF551F;
+    -fx-border-width:      0.25px;
+    -fx-background-color:  #000000;
+    -fx-border-radius:     20;
+    -fx-background-radius: 20;
+}
+.title-label{
+    -fx-font-size:        50pt;
+    -fx-border-width:     0px;
+    -fx-pref-width:       50px;
+    -fx-pref-height:      50px;
+}
+.custom-6-button{
+        -fx-pref-width: 201px;
+}
+.custom-textfield{
+    -fx-font-family:       "Bell MT";
+    -fx-font-size:         20pt;
+    -fx-text-fill:         #DF551F;
+	-fx-background-color:  #000000;
+	-fx-border-color:      #DF551F;
+	-fx-border-width:      1px;
+	-fx-border-radius:     20;
+	-fx-background-radius: 20;
+	-fx-pref-width:        330px;
+	-fx-pref-height:       51px;
+}
+custom-label{
+    -fx-font-size:        24pt;
+    -fx-font-family:       "Bell MT";
+    -fx-text-fill:         #DF551F;
+    -fx-border-radius:     20;
+    -fx-border-color:      #DF551F;
+}

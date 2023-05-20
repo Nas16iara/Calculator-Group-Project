@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="514.0" prefWidth="615.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group5.calculatorproject.MoleController">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <children>
+        <AnchorPane layoutX="14.0" prefHeight="63.0" prefWidth="705.0" style="-fx-background-color: black;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Sci" textFill="#df551f">
+                    <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="43.0" layoutY="17.0" text="CAL" textFill="#df551f">
+                    <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="258.0" layoutY="17.0" text="CHEMISTRY" textFill="#df551f">
+                    <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                    </font>
+                </Label>
+
+            </children>
+            <AnchorPane layoutX="130.0" layoutY="100.0" prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;">
+                <Button layoutX="144.0" layoutY="335.0" mnemonicParsing="false" onAction="#clickedResult" prefHeight="31.0" prefWidth="156.0" styleClass="custom-2-button" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="Calculate" textFill="#df551f"/>
+                <Label layoutX="55.0" layoutY="18.0" prefHeight="31.0" prefWidth="359.0" text="Calculation of Number of Mole:" textFill="#df551f">
+                    <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="248.0" layoutY="69.0" prefHeight="31.0" prefWidth="170.0" text="Molar Mass:" textFill="#df551f">
+                    <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="molarMass" layoutX="248.0" layoutY="110.0" prefHeight="51.0" prefWidth="170.0" style="-fx-background-radius: 20; -fx-background-color: black; -fx-border-color: #DF551F; -fx-border-radius: 20;">
+                    <font>
+                        <Font name="Bell MT" size="20.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="answerLabel" layoutX="59.0" layoutY="225.0" prefHeight="51.0" prefWidth="359.0" style="-fx-border-radius: 20; -fx-border-radius: 20; -fx-border-color: #DF551F;" text="# of mole= mass / molar mass">
+                    <font>
+                        <Font name="Bell MT" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="59.0" layoutY="69.0" text="Mass:" textFill="#df551f">
+                    <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="59.0" layoutY="188.0" prefHeight="31.0" prefWidth="170.0" text="Answer:" textFill="#df551f">
+                    <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="mass" layoutX="59.0" layoutY="110.0" prefHeight="51.0" prefWidth="170.0" style="-fx-background-radius: 20; -fx-background-color: black; -fx-border-color: #DF551F; -fx-border-radius: 20;">
+                    <font>
+                        <Font name="Bell MT" size="20.0" />
+                    </font>
+                </TextField>
+            </AnchorPane>
+         <Button fx:id="back" layoutX="606.0" layoutY="24.0" mnemonicParsing="false" onAction="#clickedBack" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="Back" textFill="#df551f"/>
+
+
+        </AnchorPane>
+
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="789.0" prefWidth="1366.0" style="-fx-background-color: black;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group5.calculatorproject.PhysicsFMassController">
+   <AnchorPane prefHeight="65.0" prefWidth="1366.0" style="-fx-background-color: #111111;">
+      <Label layoutX="600.0" layoutY="57.0" prefHeight="44.0" prefWidth="109.0" text="Mass:" textFill="#df551f">
+         <font>
+            <Font name="Bell MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" styleClass="t" text="Physics" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="5.0" text="Sci" textFill="#df551f">
+         <font>
+            <Font name="Bell MT Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="8.0" prefHeight="54.0" prefWidth="109.0" text="CAL" textFill="#df551f">
+         <font>
+            <Font name="Bell MT Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="scientificButton" layoutX="180.0" layoutY="28.0" mnemonicParsing="false" onAction="#clickedScientificButton" styleClass="custom-5-button" text="Scientific" />
+      <Button fx:id="basicButton" layoutX="361.0" layoutY="28.0" mnemonicParsing="false" onAction="#clickedBasic" styleClass="custom-5-button" text="Basic" />
+      <Button fx:id="chemistryButton" layoutX="970.0" layoutY="28.0" mnemonicParsing="false" onAction="#clickedChemistry" styleClass="custom-5-button" text="Chemistry" />
+      <Button fx:id="physicsButton" layoutX="1138.0" layoutY="28.0" mnemonicParsing="false" onAction="#clickedPhysics" styleClass="custom-5-button" text="Physics" />
+      <Button fx:id="sAcceleration" layoutX="778.0" layoutY="18.0" mnemonicParsing="false" onAction="#clickedAcceleration" prefHeight="51.0" prefWidth="109.0" styleClass="custom-7-button" text="Acceleration">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="sForce" layoutX="778.0" layoutY="63.0" mnemonicParsing="false" onAction="#clickedForce" prefHeight="31.0" prefWidth="100.0" styleClass="custom-7-button" text="Force">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+   <AnchorPane layoutX="85.0" layoutY="151.0" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;">
+      <Button layoutX="135.0" layoutY="388.0" mnemonicParsing="false" onAction="#clickedEntered" prefWidth="156.0" styleClass="custom-2-button" text="Calculate" />
+      <Label layoutX="248.0" layoutY="69.0" prefHeight="31.0" prefWidth="170.0" text="Acceleration(m/s ):" textFill="#df551f">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="acceleration" layoutX="248.0" layoutY="110.0" prefHeight="51.0" prefWidth="170.0" style="-fx-background-radius: 20; -fx-background-color: black; -fx-border-color: #DF551F; -fx-border-radius: 20;">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="answerLabel" layoutX="59.0" layoutY="225.0" prefHeight="51.0" prefWidth="359.0" style="-fx-border-radius: 20; -fx-border-radius: 20; -fx-border-color: #DF551F;">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="69.0" prefHeight="31.0" prefWidth="121.0" text="Force(N):" textFill="#df551f">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="188.0" prefHeight="31.0" prefWidth="170.0" text="Answer(kg):" textFill="#df551f">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="force" layoutX="59.0" layoutY="110.0" prefHeight="51.0" prefWidth="170.0" style="-fx-background-radius: 20; -fx-background-color: black; -fx-border-color: #DF551F; -fx-border-radius: 20;">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="393.0" layoutY="74.0" text="2" textFill="#df551f" />
+   </AnchorPane>
+   <Label layoutX="85.0" layoutY="121.0" prefHeight="30.0" prefWidth="319.0" text="How to solve for Mass:" textFill="#df551f">
+      <font>
+         <Font name="Bell MT Bold" size="24.0" />
+      </font>
+   </Label>
+   <AnchorPane layoutX="544.0" layoutY="151.0" prefHeight="219.0" prefWidth="655.0" style="-fx-border-color: #DF551F; -fx-background-radius: 20; -fx-border-radius: 20;">
+      <Label layoutX="8.0" layoutY="29.0" prefHeight="25.0" prefWidth="645.0" text="Force is the push or pull acting upon an object as the result of its interaction " textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="79.0" prefHeight="25.0" prefWidth="319.0" text="To get the Mass when acceleration is " textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="forceExplanation" layoutX="9.0" layoutY="104.0" prefHeight="25.0" prefWidth="156.0" text="1" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="accelerationExplanation" layoutX="315.0" layoutY="79.0" prefHeight="25.0" prefWidth="141.0" text="1" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="79.0" prefHeight="25.0" prefWidth="141.0" text="m/s  and force is" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="135.0" prefHeight="25.0" prefWidth="191.0" text="force ÷ acceleration" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="185.0" prefHeight="25.0" prefWidth="79.0" text="Mass =" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="answerInExplanation" layoutX="84.0" layoutY="185.0" prefHeight="25.0" prefWidth="141.0" text="1" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="185.0" prefHeight="25.0" prefWidth="41.0" text="kg" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="135.0" prefHeight="25.0" prefWidth="79.0" text="Mass =" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="forceExpl2" layoutX="83.0" layoutY="160.0" prefHeight="25.0" prefWidth="141.0" text="1" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="160.0" prefHeight="25.0" prefWidth="49.0" text="N ÷ " textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="accelerationExpl2" layoutX="261.0" layoutY="160.0" prefHeight="25.0" prefWidth="109.0" text="1" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="382.0" layoutY="160.0" prefHeight="25.0" prefWidth="41.0" text="m/s" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="104.0" prefHeight="25.0" prefWidth="28.0" text="N" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="160.0" prefHeight="25.0" prefWidth="72.0" text="Mass =" textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="415.0" layoutY="161.0" text="2" textFill="#df551f" />
+      <Label layoutX="8.0" layoutY="54.0" prefHeight="25.0" prefWidth="266.0" text="with another object." textFill="#df551f">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="81.0" text="2" textFill="#df551f" />
+   </AnchorPane>
+</AnchorPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="493.0" prefWidth="660.0" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group5.calculatorproject.BasicController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="26.0" prefWidth="620.0">
+      <children>
+
+          <Label fx:id="welcomeText" layoutX="14.0" layoutY="-1.0" prefHeight="30.0" prefWidth="27.0" text="Sci" textFill="#df551f" textOverrun="LEADING_WORD_ELLIPSIS">
+            <font>
+               <Font name="Times New Roman Bold" size="21.0" />
+            </font>
+         </Label>
+         <BorderPane prefHeight="20.0" prefWidth="200.0" />
+         <Label fx:id="welcomeText1" layoutX="41.0" layoutY="-2.0" prefHeight="46.0" prefWidth="52.0" text="CAL" textFill="#df551f" textOverrun="LEADING_WORD_ELLIPSIS">
+            <font>
+               <Font name="Times New Roman Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label fx:id="welcomeText11" layoutX="268.0" layoutY="-3.0" prefHeight="46.0" prefWidth="84.0" text="BASIC" textFill="#df551f" textOverrun="LEADING_WORD_ELLIPSIS">
+            <font>
+               <Font name="Times New Roman Bold" size="24.0" />
+            </font>
+         </Label>
+         <Button fx:id="mainButton" layoutX="518.0" layoutY="8.0" mnemonicParsing="false" onAction="#clickedMain" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: black; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: df551f;" text="Main" textFill="#df551f" />
+      </children>
+   </AnchorPane>
+   <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="571.0" style="-fx-background-color: BLACK;">
+      <children>
+         <TextField fx:id="equationBar" alignment="CENTER_RIGHT" layoutX="5.0" layoutY="7.0" prefHeight="57.0" prefWidth="606.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextField>
+         <VBox layoutX="-2.0" layoutY="83.0" prefHeight="305.0" prefWidth="620.0">
+            <children>
+               <HBox prefHeight="66.0" prefWidth="594.0">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#clickSeven" prefHeight="83.0" prefWidth="159.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="7" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickEight" prefHeight="79.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="8" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickNine" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="9" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickDivide" prefHeight="66.0" prefWidth="157.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="/" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                  </children>
+               </HBox>
+
+               <HBox prefHeight="66.0" prefWidth="594.0">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#clickFour" prefHeight="66.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="4" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickFive" prefHeight="79.0" prefWidth="160.0 " style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="5" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickSix" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="6" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickMultiply" prefHeight="66.0" prefWidth="158.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="*" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                  </children>
+               </HBox>
+
+               <HBox prefHeight="66.0" prefWidth="594.0">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#clickOne" prefHeight="66.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="1" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickTwo" prefHeight="79.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="2" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickThree" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="3" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickMinus" prefHeight="66.0" prefWidth="158.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="-" textFill="#df551f">
+                        <font>
+                           <Font size="21.0" />
+                        </font></Button>
+                  </children>
+               </HBox>
+
+               <HBox prefHeight="66.0" prefWidth="594.0">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#clickZero" prefHeight="66.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="0" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickClear" prefHeight="79.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="c" textFill="#df551f">
+                        <font>
+                           <Font size="22.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickEqual" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="=" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                     <Button mnemonicParsing="false" onAction="#clickPlus" prefHeight="66.0" prefWidth="158.0" style="-fx-background-color: #000000; -fx-border-color: DF551F; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" text="+" textFill="#df551f">
+                        <font>
+                           <Font size="20.0" />
+                        </font></Button>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+   </AnchorPane>
+
+
+</VBox>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-color: black;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group5.calculatorproject.ScientificCalController">
+   <children>
+      <AnchorPane prefHeight="842.0" prefWidth="1366.0" style="-fx-background-color: #111111;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+               <Label layoutX="576.0" styleClass="t" text="Scientific" textFill="#df551f">
+                   <font>
+                       <Font name="Bell MT" size="50.0" />
+                   </font>
+               </Label>
+               <Label layoutX="14.0" layoutY="5.0" text="Sci" textFill="#df551f">
+                   <font>
+                       <Font name="Bell MT Bold" size="31.0" />
+                   </font>
+               </Label>
+               <Label layoutX="55.0" layoutY="8.0" prefHeight="54.0" prefWidth="109.0" text="CAL" textFill="#df551f">
+                   <font>
+                       <Font name="Bell MT Bold" size="45.0" />
+                   </font>
+               </Label>
+            <Button fx:id="scientificButton" layoutX="164.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedScientific" prefHeight="51.0" prefWidth="154.0" styleClass="custom-5-button" text="Scientific" />
+            <Button fx:id="chemistryButton" layoutX="1001.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedChemistry" prefHeight="51.0" prefWidth="152.0" styleClass="custom-5-button" text="Chemistry" />
+            <Button fx:id="physicsButton" layoutX="1168.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedPhysics" prefHeight="51.0" prefWidth="144.0" styleClass="custom-5-button" text="Physics" />
+            <Button fx:id="basicButton" layoutX="335.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickedBasic" prefHeight="51.0" prefWidth="119.0" styleClass="custom-4-button" text="Basic" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="188.0" layoutY="74.0" prefHeight="619.14" prefWidth="955.81" style="-fx-background-color: black;" AnchorPane.rightAnchor="0.0">
+         <children>
+             <Pane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #000000;" styleClass="custom-pane">
+               <children>
+                   <Pane layoutX="188.0" layoutY="74.0" prefHeight="619.14" prefWidth="955.81" style="-fx-background-color: #000000; -fx-border-color: #df551f; -fx-border-width: 0.5px; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="pane">
+                       <children>
+                           <Pane layoutX="41.0" layoutY="14.0" prefHeight="583.0" prefWidth="876.0" style="-fx-background-color: #000000; -fx-border-color: #df551f; -fx-border-width: 0.5px; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="pane">
+                               <children>
+                                   <TextField fx:id="equationBar" layoutX="1.0" layoutY="247.0" prefHeight="39.0" prefWidth="875.0" styleClass="custom-textfield">
+                                       <font>
+                                           <Font name="Bell MT" size="17.0" />
+                                       </font>
+                                   </TextField>
+                                   <Button layoutX="28.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickedSqrtTwo" prefHeight="26.0" prefWidth="60.0" text="√" />
+                                   <Button layoutX="28.0" layoutY="409.0" mnemonicParsing="false" onAction="#clickedSin" prefHeight="26.0" prefWidth="60.0" text="sin">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="28.0" layoutY="465.0" mnemonicParsing="false" onAction="#clickedCsc" prefHeight="33.0" prefWidth="60.0" text="csc">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="115.0" layoutY="409.0" mnemonicParsing="false" onAction="#clickedCos" prefHeight="26.0" prefWidth="60.0" text="cos">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="115.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickedSqrtA" prefHeight="26.0" prefWidth="60.0" styleClass="squared-button" text="√" />
+                                   <Button layoutX="115.0" layoutY="465.0" mnemonicParsing="false" onAction="#clickedSec" prefHeight="33.0" prefWidth="60.0" text="sec">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="202.0" layoutY="301.0" mnemonicParsing="false" onAction="#clickedSquareCube" prefHeight="46.0" prefWidth="80.0" styleClass="button" text="a" />
+                                   <Button layoutX="202.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickedPi" prefHeight="26.0" prefWidth="60.0" text="π" />
+                                   <Button layoutX="202.0" layoutY="409.0" mnemonicParsing="false" onAction="#clickTan" prefHeight="26.0" prefWidth="60.0" text="tan">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="202.0" layoutY="465.0" mnemonicParsing="false" onAction="#clickedCot" prefHeight="33.0" prefWidth="60.0" text="cot">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="311.0" layoutY="301.0" mnemonicParsing="false" onAction="#clickedPosSign" prefHeight="33.0" prefWidth="60.0" styleClass="second-Row-button" text="+a" />
+                                   <Button layoutX="202.0" layoutY="521.0" mnemonicParsing="false" onAction="#clickedRad" prefHeight="33.0" prefWidth="60.0" text="RAD">
+                                       <font>
+                                           <Font name="System Bold Italic" size="20.0" />
+                                       </font>
+                                       <styleClass>
+                                           <String fx:value="custom-3-button" />
+                                           <String fx:value="button" />
+                                       </styleClass>
+                                   </Button>
+                                   <Button layoutX="594.0" layoutY="302.0" mnemonicParsing="false" onAction="#clickedPlus" prefHeight="46.0" prefWidth="60.0" styleClass="button" text="+" />
+                                   <Button layoutX="594.0" layoutY="356.0" mnemonicParsing="false" onAction="#clickedMinus" prefHeight="26.0" prefWidth="60.0" text="-" />
+                                   <Button layoutX="594.0" layoutY="410.0" mnemonicParsing="false" onAction="#clickedMultiplication" prefHeight="26.0" prefWidth="60.0" text="*">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="594.0" layoutY="466.0" mnemonicParsing="false" onAction="#clickedDivision" prefHeight="33.0" prefWidth="60.0" text="÷">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="594.0" layoutY="522.0" mnemonicParsing="false" onAction="#clickedEnter" prefHeight="33.0" prefWidth="264.0" styleClass="custom-button" text="Enter" />
+                                   <Button layoutX="681.0" layoutY="302.0" mnemonicParsing="false" onAction="#clickedE" prefHeight="46.0" prefWidth="60.0" text="e">
+                                       <styleClass>
+                                           <String fx:value="custom-3-button" />
+                                           <String fx:value="button" />
+                                       </styleClass>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                   </Button>
+                                   <Button layoutX="681.0" layoutY="356.0" mnemonicParsing="false" onAction="#clickedPercent" prefHeight="26.0" prefWidth="60.0" text="\%" />
+                                   <Button layoutX="681.0" layoutY="410.0" mnemonicParsing="false" onAction="#clicked10SqA" prefHeight="26.0" prefWidth="60.0" text="EE">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="681.0" layoutY="466.0" mnemonicParsing="false" onAction="#clickedMod" prefHeight="33.0" prefWidth="60.0" styleClass="custom-9-button" text="mod" />
+                                   <Button layoutX="768.0" layoutY="302.0" mnemonicParsing="false" onAction="#clickedClear" prefHeight="46.0" prefWidth="80.0" styleClass="button" text="C" />
+                                   <Button layoutX="768.0" layoutY="356.0" mnemonicParsing="false" onAction="#clickedFract" prefHeight="26.0" prefWidth="60.0" text="a/b" />
+                                   <Button layoutX="768.0" layoutY="410.0" mnemonicParsing="false" onAction="#clickedNaturalLog" prefHeight="26.0" prefWidth="60.0" text="ln">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="768.0" layoutY="466.0" mnemonicParsing="false" onAction="#clickedInverse" prefHeight="33.0" prefWidth="60.0" text="1/x">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="311.0" layoutY="473.0" mnemonicParsing="false" onAction="#clickedLog" prefHeight="33.0" prefWidth="60.0" styleClass="second-Row-button" text="log10" />
+                                   <Button fx:id="sevenButton" layoutX="311.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickedSeven" prefHeight="26.0" prefWidth="60.0" styleClass="second-Row-button" text="7" />
+                                   <Button fx:id="fourButton" layoutX="311.0" layoutY="387.0" mnemonicParsing="false" onAction="#clickedFour" prefHeight="26.0" prefWidth="60.0" styleClass="second-Row-button" text="4">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button fx:id="oneButton" layoutX="311.0" layoutY="430.0" mnemonicParsing="false" onAction="#clickedOne" prefHeight="33.0" prefWidth="60.0" styleClass="second-Row-button" text="1" />
+                                   <Button layoutX="401.0" layoutY="473.0" mnemonicParsing="false" onAction="#clickedLog2" prefHeight="33.0" prefWidth="60.0" styleClass="second-Row-button" text="log2" />
+                                   <Button fx:id="eightButton" layoutX="402.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickedEight" prefHeight="26.0" prefWidth="60.0" styleClass="second-Row-button" text="8" />
+                                   <Button fx:id="fiveButton" layoutX="402.0" layoutY="387.0" mnemonicParsing="false" onAction="#clickedFive" prefHeight="26.0" prefWidth="60.0" styleClass="second-Row-button" text="5">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button fx:id="zeroButton" layoutX="490.0" layoutY="473.0" mnemonicParsing="false" onAction="#clickedZero" prefHeight="33.0" prefWidth="41.0" text="0">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                       <styleClass>
+                                           <String fx:value="second-Row-button" />
+                                           <String fx:value="second-Row-button" />
+                                       </styleClass>
+                                   </Button>
+                                   <Button fx:id="twoButton" layoutX="402.0" layoutY="430.0" mnemonicParsing="false" onAction="#clickedTwo" prefHeight="33.0" prefWidth="60.0" styleClass="second-Row-button" text="2" />
+                                   <Button fx:id="nineButton" layoutX="489.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickedNine" prefHeight="26.0" prefWidth="60.0" styleClass="second-Row-button" text="9" />
+                                   <Button fx:id="sixButton" layoutX="490.0" layoutY="387.0" mnemonicParsing="false" onAction="#clickedSix" prefHeight="26.0" prefWidth="60.0" styleClass="second-Row-button" text="6">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                   </Button>
+                                   <Button fx:id="dotButton" layoutX="489.0" layoutY="301.0" mnemonicParsing="false" onAction="#clickedDecimal" prefHeight="33.0" prefWidth="41.0" text=".">
+                                       <font>
+                                           <Font size="15.0" />
+                                       </font>
+                                       <styleClass>
+                                           <String fx:value="second-Row-button" />
+                                           <String fx:value="second-Row-button" />
+                                       </styleClass>
+                                   </Button>
+                                   <Button fx:id="threeButton" layoutX="489.0" layoutY="430.0" mnemonicParsing="false" onAction="#clickedThree" prefHeight="33.0" prefWidth="60.0" styleClass="second-Row-button" text="3" />
+                                   <Button layoutX="115.0" layoutY="301.0" mnemonicParsing="false" onAction="#clickedSqB" prefHeight="46.0" prefWidth="60.0" text="a">
+                                       <font>
+                                           <Font name="Bell MT" size="18.0" />
+                                       </font>
+                                   </Button>
+                                   <Button accessibleText="squared number" layoutX="28.0" layoutY="301.0" mnemonicParsing="false" onAction="#clickedSqTwo" prefHeight="46.0" prefWidth="60.0" styleClass="squared-button" text="a" textFill="#df551f">
+                                       <font>
+                                           <Font name="Bell MT" size="18.0" />
+                                       </font>
+                                   </Button>
+                                   <Button layoutX="401.0" layoutY="301.0" mnemonicParsing="false" onAction="#clickedNegSign" prefHeight="33.0" prefWidth="60.0" styleClass="second-Row-button" text="-a" />
+                              <Label layoutX="75.0" layoutY="313.0" prefWidth="737.0" text="2">
+                                 <styleClass>
+                                    <String fx:value="custom-1-label" />
+                                    <String fx:value="custom-1-label" />
+                                 </styleClass>
+                              </Label>
+                              <Label layoutX="162.0" layoutY="313.0" styleClass="custom-1-label" text="b" />
+                              <Label layoutX="145.0" layoutY="356.0" styleClass="custom-1-label" text="a" />
+                              <Label layoutX="249.0" layoutY="312.0" prefWidth="737.0" text="3">
+                                 <styleClass>
+                                    <String fx:value="custom-1-label" />
+                                    <String fx:value="custom-1-label" />
+                                 </styleClass>
+                              </Label>
+                              <Button layoutX="115.0" layoutY="521.0" mnemonicParsing="false" onAction="#clickedDEG" prefHeight="33.0" prefWidth="60.0" text="deg">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="28.0" layoutY="521.0" mnemonicParsing="false" onAction="#clickedESqB" prefHeight="33.0" prefWidth="60.0" text="e">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="73.0" layoutY="534.0" styleClass="custom-1-label" text="b" />
+                              <Button layoutX="311.0" layoutY="521.0" mnemonicParsing="false" onAction="#clickedBackspace" prefHeight="33.0" prefWidth="264.0" styleClass="custom-button" text="Backspace" />
+                              <Label layoutX="259.0" layoutY="14.0" prefHeight="21.0" prefWidth="369.0" text="NOTE: you must enter number first than operation" textFill="#df551f">
+                                 <font>
+                                    <Font name="Bell MT" size="17.0" />
+                                 </font>
+                              </Label>
+                               </children>
+                           </Pane>
+                          </children>
+                   </Pane>
+                  <Button fx:id="mainPageButton" layoutX="14.0" layoutY="693.0" mnemonicParsing="false" onAction="#clickedMain" prefHeight="51.0" prefWidth="154.0" styleClass="custom-5-button" text="Main" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
